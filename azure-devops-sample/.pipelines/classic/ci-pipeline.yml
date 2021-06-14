@@ -18,7 +18,7 @@ jobs:
     inputs:
       azureSubscription: "Microsoft Azure Internal Consumption (ea3e783f-6b4a-4e74-b379-9fa512da2b7f)"
       ScriptType: 'FilePath'
-      ScriptPath: '$(System.DefaultWorkingDirectory)/.pipelines/scripts/Generate-Connections.ps1'
+      ScriptPath: '$(System.DefaultWorkingDirectory)/azure-devops-sample/.pipelines/scripts/Generate-Connections.ps1'
       FailOnStandardError: true
       azurePowerShellVersion: LatestVersion
       pwsh: true
