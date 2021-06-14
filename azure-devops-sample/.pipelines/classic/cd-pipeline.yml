@@ -42,5 +42,4 @@ stages:
               appType: 'functionApp'
               appName: 'LAStdEx1'
               package: '$(System.DefaultWorkingDirectory)/azure-devops-sample/Local Projects.zip'
-              
               deploymentMethod: 'zipDeploy'
