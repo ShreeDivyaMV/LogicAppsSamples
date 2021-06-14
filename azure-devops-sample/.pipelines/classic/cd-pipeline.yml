@@ -38,9 +38,9 @@ stages:
           - task: AzureFunctionApp@1
             displayName: 'Deploy logic app workflows'
             inputs:
-              azureSubscription: '$(devServiceConnection)'
+              azureSubscription: 'Microsoft Azure Internal Consumption (ea3e783f-6b4a-4e74-b379-9fa512da2b7f)'
               appType: 'functionApp'
-              appName: '$(logicAppName)'
-              package: '$(Pipeline.Workspace)/cipipeline/$(logicAppCIArtifactName)/$(resources.pipeline.cipipeline.runID).zip'
-              appSettings: '-emailAddress $(toEmailAddress)'
+              appName: 'LAStdEx1'
+              package: '$(System.DefaultWorkingDirectory)/azure-devops-sample/Local Projects.zip'
+              
               deploymentMethod: 'zipDeploy'
