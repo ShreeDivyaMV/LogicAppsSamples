@@ -16,7 +16,7 @@ jobs:
   - task: AzurePowerShell@4
     displayName: 'Generate connections.json file'
     inputs:
-      azureSubscription: $(devServiceConnection)
+      azureSubscription: "Microsoft Azure Internal Consumption (ea3e783f-6b4a-4e74-b379-9fa512da2b7f)"
       ScriptType: 'FilePath'
       ScriptPath: '$(System.DefaultWorkingDirectory)/.pipelines/scripts/Generate-Connections.ps1'
       FailOnStandardError: true
