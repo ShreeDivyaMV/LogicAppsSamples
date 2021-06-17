@@ -24,6 +24,7 @@ jobs:
       pwsh: true
       ScriptArguments: >-
         -resourceGroup $(resourceGroupName)
+        -outputlocation $(System.DefaultWorkingDirectory)/azure-devops-sample
 
   - task: CopyFiles@2
     displayName: 'Create project folder'
