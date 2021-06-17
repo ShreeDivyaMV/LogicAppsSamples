@@ -28,7 +28,7 @@ jobs:
   - task: CopyFiles@2
     displayName: 'Create project folder'
     inputs:
-      SourceFolder: '$(System.DefaultWorkingDirectory)'
+      SourceFolder: '$(System.DefaultWorkingDirectory)/azure-devops-sample'
       Contents: |
         host.json
         proxies.json
