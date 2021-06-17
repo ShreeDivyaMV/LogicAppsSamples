@@ -24,7 +24,7 @@ jobs:
       pwsh: true
       ScriptArguments: >-
         -resourceGroup $(resourceGroupName)
-        -outputlocation $(System.DefaultWorkingDirectory)/azure-devops-sample
+        -outputlocation $(System.DefaultWorkingDirectory)/azure-devops-sample/connections.json
 
   - task: CopyFiles@2
     displayName: 'Create project folder'
