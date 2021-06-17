@@ -31,7 +31,7 @@ param(
 
   [Parameter(Mandatory = $False)]
   [string]
-  $outputLocation = "connections.json",
+  $outputLocation = "azure-devops-sample/connections.json",
 
   [Parameter(Mandatory = $False)]
   [switch]
