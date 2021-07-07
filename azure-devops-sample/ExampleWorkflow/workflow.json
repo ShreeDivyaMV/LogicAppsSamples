@@ -7,7 +7,7 @@
             "inputs": {
                 "host": {
                     "connection": {
-                        "referenceName": "la-wus-logicappsample-connection-office365"
+                        "referenceName": "office365"
                     }
                 },
                 "method": "post",
