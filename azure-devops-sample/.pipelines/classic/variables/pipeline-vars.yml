@@ -9,8 +9,8 @@ variables:
   devServiceConnection: 'AzureDevOps'
 
   # Resource Group
-  resourceGroupLocation: 'westus'
-  resourceGroupName: 'rg-wus-$(projectName)-$(suffix)'
+  resourceGroupLocation: 'centralus'
+  resourceGroupName: 'LASBTrigger_group'
 
   # Storage
   storageName: 'sa$(projectName)$(suffix)'
