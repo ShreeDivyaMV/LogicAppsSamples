@@ -92,6 +92,10 @@ Function Get-FunctionConnections {
     if ($function -match "(Invoke url)") {
       $function | select-string -Pattern "Invoke url:" -SimpleMatch | ForEach-Object {
 
+        # Anonymous functions do not have the ?code=xxx suffix
+        if (-not($line.contains('code'))) {
+          $line += '?'
+        }
         $line = $_.Line -replace '\s', ''
         $name = [Regex]::Matches($line, "(?<=api\/)(.*)(?=\?)")
         $trigger = [Regex]::Matches($line, "(?<=url:)(.*)(?=\?)")
